@@ -34,6 +34,7 @@ const NIST = {
   NEUTRINO_TAU: { mass: 0, sigma: 1 },
   DARK_MATTER: { mass: 0, sigma: 1 },
   GRAVITON: { mass: 0, sigma: 1 },
+  DELTA_BARYON: { mass: 1210.0, sigma: 1.0 },
 };
 
 // ----------------------------------------------------------------------------
@@ -409,6 +410,43 @@ const OP_LAYER_6_GAUSSIAN_SHIFT: TopologicalOperation = {
   },
 };
 
+const OP_FLAVOR_SWAP_D_TO_U: TopologicalOperation = {
+  code: 'FLAVOR_SWAP_D_TO_U',
+  description:
+    'Converts a uud Baryon (Proton) to a uuu Baryon by subtracting the geometry of a Down quark and adding an Up quark.',
+  apply: (mass, base) => {
+    // VLT Up Quark = Base * 2*Pi * (2/3)
+    const upQuark = base * (2 * CONST.PI * (2 / 3));
+    // VLT Down Quark = Base * 2*Pi * (1.5)
+    const downQuark = base * (2 * CONST.PI * 1.5);
+
+    const massDifference = upQuark - downQuark; // Thats negative number (-2.676 MeV)
+    console.log(`   [DEBUG] Flavor Swap (u - d): ${massDifference.toFixed(5)} MeV`);
+
+    return mass + massDifference;
+  },
+};
+
+const OP_PURE_NEUTRAL_FRICTION: TopologicalOperation = {
+  code: 'PURE_NEUTRAL_FRICTION_KNOT',
+  description:
+    'Adds 2 friction knots for the (+ + +) parallel spin state. Unlike free Charged Pions, internal baryon knots are neutral topological clashes. We use the core interference (8/9 Pi^5) + 16-tensor drag, BUT REMOVE the artificial +1.0 m_e charge.',
+  apply: (mass, base) => {
+    const knotCore = (8 / 9) * Math.pow(Math.PI, 5);
+    const knotDrag = 16 * CONST.ALPHA;
+    const knotBinding = 0.25 * CONST.ALPHA;
+
+    // Clean node (without 1.0 m_e)
+    const pureKnotFactor = knotCore + knotDrag - knotBinding;
+    const addedFriction = base * (2 * pureKnotFactor);
+
+    console.log(`   [DEBUG] 1 Pure Neutral Knot: ${(base * pureKnotFactor).toFixed(5)} MeV`);
+    console.log(`   [DEBUG] Adding 2 Knots: + ${addedFriction.toFixed(5)} MeV`);
+
+    return mass + addedFriction;
+  },
+};
+
 // ----------------------------------------------------------------------------
 // 4. PARTICLE RECIPES
 // ----------------------------------------------------------------------------
@@ -486,6 +524,12 @@ const RECIPE_NEUTRINO_TAU: ParticleRecipe = [OP_LAYER_3_GAUSSIAN_SHIFT, OP_KOIDE
 const RECIPE_DARK_MATTER: ParticleRecipe = [OP_LAYER_5_GAUSSIAN_SHIFT];
 
 const RECIPE_GRAVITON: ParticleRecipe = [OP_LAYER_6_GAUSSIAN_SHIFT];
+
+const RECIPE_DELTA_BARYON: ParticleRecipe = [
+  ...RECIPE_PROTON,
+  OP_FLAVOR_SWAP_D_TO_U,
+  OP_PURE_NEUTRAL_FRICTION,
+];
 
 // ----------------------------------------------------------------------------
 // 5. THE BUILDER ENGINE (VLT ASSEMBLER)
@@ -592,3 +636,4 @@ buildParticle('Muon Neutrino (ν_μ)', RECIPE_NEUTRINO_MU, NIST.NEUTRINO_MU);
 buildParticle('Tau Neutrino (ν_τ)', RECIPE_NEUTRINO_TAU, NIST.NEUTRINO_TAU);
 buildParticle('Axion / Dark Matter (Layer 5)', RECIPE_DARK_MATTER, NIST.DARK_MATTER);
 buildParticle('Graviton (Layer 6)', RECIPE_GRAVITON, NIST.GRAVITON);
+buildParticle('Delta Baryon (Δ++) / uuu', RECIPE_DELTA_BARYON, NIST.DELTA_BARYON);
