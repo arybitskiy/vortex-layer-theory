@@ -1,6 +1,9 @@
 # vortex-layer-theory
 Vortex Layer Theory: A Geometric Unification of Quantum Mechanics, the Standard Model, and 11-Dimensional Hydrodynamics
 
+## Preprint
+https://zenodo.org/records/20806350
+
 ## Playground
 https://stackblitz.com/edit/vitejs-vite-duqkpnpk?file=src%2Fvlt.ts
 
