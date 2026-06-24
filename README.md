@@ -5,6 +5,7 @@ Vortex Layer Theory: A Geometric Unification of Quantum Mechanics, the Standard 
 https://stackblitz.com/edit/vitejs-vite-duqkpnpk?file=src%2Fvlt.ts
 
 ## Output of playground (if you are lazy)
+```
 INITIALIZING VORTEX LAYER THEORY (VLT) ENGINE v1.0...
 Base Substrate: Electron (0.51099895 MeV)
 ======================================================================
@@ -425,3 +426,4 @@ CURRENT TOTAL: 1.213715 GeV
 🎯 NIST TARGET: 1.210000 GeV
 📉 ABSOLUTE ERROR: 3.715277 MeV
 🚨 DEVIATION: 3.715 σ (Sigmas)
+```
