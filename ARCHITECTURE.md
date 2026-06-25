@@ -84,3 +84,9 @@ A valid theory must be falsifiable. VLT establishes the following strict boundar
 2.  **Superheavy Higgs States:** VLT demands topological invariance. If the electron projects to the X-axis Higgs (125.11 GeV), the Muon and Tau mass ratios MUST project to hidden Y and Z-axis Higgs states. VLT predicts the Y-axis Higgs at exactly **25.86 TeV**. If future colliders (e.g., FCC) scan this energy range and find no resonance, the VLT topological invariance is falsified.
 3.  **The W-Boson Anomaly:** VLT derives the W-Boson mass geometrically from the Z-Boson using the Koide phase angle (sqrt(7/9)). This yields a mass of **80,419.6 MeV**. This perfectly aligns with the 2022 Fermilab (CDF II) anomaly, contradicting standard NIST averages. If the Fermilab data is proven wrong and the true pole mass is closer to 80,357 MeV, the VLT Weinberg-Koide bridge is falsified.
 4.  **Dark Matter as 5th Layer Dust:** VLT predicts axion-like Dark Matter originating at Layer 5 with an absolute mass of **~2.61 * 10⁻²³ eV**. If Dark Matter is proven to consist of heavy WIMPs (Weakly Interacting Massive Particles in the GeV/TeV range), the VLT Gaussian ocean depth theorem is falsified.
+
+---
+
+## 6. Acknowledgments and Epistemological Debt
+
+The formalization of this Architecture Document was directly inspired by the profound epistemological critique provided by [Dr. Stefaan Vossen](https://www.dottheory.co.uk/). His incisive analysis—specifically his distinction between the fluid ontology ("Theory A") and the geometric projection of probability ("Theory B"), as well as his demand to explicitly declare the *provenance and bridge conditions* of the topological operators—served as the primary catalyst for transitioning VLT from a numerical proposal into a fully auditable framework. Deepest gratitude is extended to him for his open-mindedness and for holding this theory to the highest philosophical and scientific standards.
