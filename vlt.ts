@@ -153,9 +153,9 @@ P.push({
   unit: 'GeV',
   nist: { mass: NIST.HIGGS.mass / 1e3, sigma: NIST.HIGGS.sigma / 1e3 },
 });
-const M_Higgs_Y = M_Higgs * (M_Muon_Bare / M_E) * 0.5;
+const M_Higgs_Y = M_Higgs * (M_Muon_Bare / M_E);
 P.push({ name: 'Heavy Higgs (Y)', calc: () => M_Higgs_Y / 1e6, unit: 'TeV', nist: NIST.PREDICT });
-const M_Higgs_Z = M_Higgs * (M_Tau / M_E) * (1 / 3);
+const M_Higgs_Z = M_Higgs * (M_Tau / M_E);
 P.push({
   name: 'Superheavy Higgs (Z)',
   calc: () => M_Higgs_Z / 1e6,
