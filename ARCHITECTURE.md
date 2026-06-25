@@ -87,6 +87,44 @@ A valid theory must be falsifiable. VLT establishes the following strict boundar
 
 ---
 
-## 6. Acknowledgments and Epistemological Debt
+## 6. Macroscopic Topology: Stars and Black Holes
+
+A robust Theory of Everything must demonstrate scale invariance—the fundamental geometric rules governing subatomic particles must mathematically scale up to govern astrophysical bodies without requiring new parameters. In VLT, gravity is not an independent force, but rather the emergent hydrodynamic pressure gradient (ΔP) of the 11-dimensional Ocean. 
+
+Because cosmic bodies are simply macroscopic collections of 3D topological vortices (protons), the cosmic limits of stellar ignition and black hole collapse can be derived entirely from the microscopic geometric constraints of the proton (6*π⁵) and vacuum friction (α).
+
+### 6.1 The Topological Collapse Limit (Black Holes)
+In standard astrophysics, a star collapses into a black hole (or neutron star) when its gravitational pressure overcomes the quantum degeneracy pressure of its fermions. This limit is proportional to the cube of the ratio between the Planck Mass ($M_{pl}$) and the Proton Mass ($m_p$). The cube arises because the collapse occurs within 3-dimensional observable space.
+
+In VLT, we do not rely on empirical measurements for these masses. We substitute our purely geometric equivalents:
+1.  **VLT Planck Mass Equivalent:** The absolute density limit of the 10-dimensional spatial ocean, geometrically filtered through 10 dimensions of electromagnetic friction: `M_pl = (10 * m_e) / α^10`
+2.  **VLT Proton Mass:** The 5-dimensional vortex volume: `m_p = 6 * π^5 * m_e`
+
+The total number of proton vortices ($N_{BH}$) required to puncture Layer 0 and rupture the spatial fabric (creating a Black Hole / Singularity) is geometrically constrained as:
+**N_BH = [ (10 * m_e / α^10) / (6 * π^5 * m_e) ]³ = [ 10 / (6 * π^5 * α^10) ]³**
+
+*(Notice that the base mass of the electron, m_e, cancels out perfectly. The collapse limit is dictated solely by pure dimensional geometry).*
+
+*   **VLT Geometric Result:** When multiplied by the mass of a proton, this yields an absolute topological collapse limit of **1.73 Solar Masses (M_sun)**.
+*   **Observational Data:** The Tolman-Oppenheimer-Volkoff (TOV) limit for neutron star collapse is generally estimated between 1.5 and 3.0 M_sun, while the Chandrasekhar limit for white dwarfs is 1.44 M_sun. The VLT prediction of 1.73 M_sun lands perfectly within the transition boundary separating stable matter from topological collapse.
+
+### 6.2 The Stellar Ignition Threshold (Red Dwarfs)
+At what minimum mass does a cold cloud of gas ignite nuclear fusion to become a star? 
+To initiate fusion, the macroscopic hydrodynamic pressure of the collapsing gas cloud must overcome the exact microscopic quantum friction of the interacting protons. 
+
+As established in Bridge Condition A, a proton consists of 3 orthogonal axes exposing 6 spatial poles to the Layer +4 electromagnetic boundary. Its total topological vacuum drag is **6 * α**.
+
+Therefore, the minimum macroscopic mass required to overcome this specific microscopic friction barrier and spark fusion is simply the Topological Collapse Limit ($M_{BH}$) multiplied by the proton's friction factor ($6 * α$):
+**M_ignite = M_BH * (6 * α)**
+
+*   **VLT Geometric Result:** 1.73 M_sun * 6 * 0.007297 = **0.0758 Solar Masses**.
+*   **Observational Data:** Astrophysical observations and standard models place the boundary between a dead Brown Dwarf and a fusing Red Dwarf at exactly **~0.075 to 0.080 Solar Masses**.
+
+**Conclusion on Macroscopic Scaling:**
+The VLT framework mathematically proves that a star ignites when macroscopic oceanic pressure matches the exact microscopic electromagnetic drag of a proton (6*α), and it collapses into a black hole when 3D spatial pressure ruptures the 10D capacity of the continuum. Both cosmic boundaries are derived with zero empirical mass constants.
+
+---
+
+## 7. Acknowledgments and Epistemological Debt
 
 The formalization of this Architecture Document was directly inspired by the profound epistemological critique provided by [Dr. Stefaan Vossen](https://www.dottheory.co.uk/). His incisive analysis—specifically his distinction between the fluid ontology ("Theory A") and the geometric projection of probability ("Theory B"), as well as his demand to explicitly declare the *provenance and bridge conditions* of the topological operators—served as the primary catalyst for transitioning VLT from a numerical proposal into a fully auditable framework. Deepest gratitude is extended to him for his open-mindedness and for holding this theory to the highest philosophical and scientific standards.
