@@ -7,6 +7,9 @@ https://zenodo.org/records/20806350 (outdated)
 ## Architecture
 Follow [a link](./ARCHITECTURE.md)
 
+## 3d simulation
+Follow [a link](https://stackblitz.com/edit/stackblitz-starters-yml6xjae?file=index.html)
+
 ## Playground
 https://stackblitz.com/edit/vitejs-vite-duqkpnpk?file=src%2Fvlt.ts
 
