@@ -2,7 +2,10 @@
 Vortex Layer Theory: A Geometric Unification of Quantum Mechanics, the Standard Model, and 11-Dimensional Hydrodynamics
 
 ## Preprint
-https://zenodo.org/records/20806350
+https://zenodo.org/records/20806350 (outdated)
+
+## Architecture
+Follow [a link](./ARCHITECTURE.md)
 
 ## Playground
 https://stackblitz.com/edit/vitejs-vite-duqkpnpk?file=src%2Fvlt.ts
@@ -29,8 +32,8 @@ Gluon                   | 0.0000 MeV       | PREDICTION     | 🔮 VLT Predictio
 Z Boson                 | 91187.2582 MeV   | 91187.6000 MeV | ✅ 0.16 σ (Perfect)
 W Boson                 | 80419.6026 MeV   | 80377.0000 MeV | ⚠️ 3.55 σ (Good)
 Higgs Boson (X)         | 125.1036 GeV     | 125.1100 GeV   | ✅ 0.05 σ (Perfect)
-Heavy Higgs (Y)         | 12.9339 TeV      | PREDICTION     | 🔮 VLT Prediction
-Superheavy Higgs (Z)    | 145.0148 TeV     | PREDICTION     | 🔮 VLT Prediction
+Heavy Higgs (Y)         | 25.8677 TeV      | PREDICTION     | 🔮 VLT Prediction
+Superheavy Higgs (Z)    | 435.0443 TeV     | PREDICTION     | 🔮 VLT Prediction
 Electron Neutrino       | 0.0938 eV        | PREDICTION     | 🔮 VLT Prediction
 Muon Neutrino           | 19.4020 eV       | PREDICTION     | 🔮 VLT Prediction
 Tau Neutrino            | 326.3034 eV      | PREDICTION     | 🔮 VLT Prediction
